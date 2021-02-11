@@ -16,9 +16,9 @@
 
         <a-marker type="pattern" preset = "custom" url ="./pattern-EM%20logo%20no%20words.patt"></a-marker>
 
-        <a-marker id="animated-marker" type='barcode' value='6'>
+        <a-marker-camera preset='hiro'>
             <a-entity gltf-model="#animated-asset"></a-entity>
-        </a-marker>
+        </a-marker-camera>
 
         <!-- use this <a-entity camera> to support multiple-markers, otherwise use <a-marker-camera> instead of </a-marker> -->
         <a-entity camera></a-entity>
