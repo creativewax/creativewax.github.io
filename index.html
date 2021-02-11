@@ -7,8 +7,10 @@
 <script src="https://rawgit.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
-    <!-- we add detectionMode and matrixCodeType to tell AR.js to recognize barcode markers -->
     <a-scene embedded arjs light="defaultLightsEnabled: false">
+        <a-entity light="type: ambient; color: #FFF"></a-entity>
+        <a-entity light="type: directional; color: #FFF; intensity: 0.6" position="-0.5 -0.5 1"></a-entity>
+        
         <a-assets>
             <a-asset-item id="animated-asset" src="./scene.glb"></a-asset-item>
         </a-assets> 
