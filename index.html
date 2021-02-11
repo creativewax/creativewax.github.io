@@ -14,9 +14,7 @@
             <a-asset-item id="animated-asset" src="./hammer.glb"></a-asset-item>
         </a-assets> 
 
-        <a-marker type="pattern" preset = "custom" url ="./pattern-EM%20logo%20no%20words.patt"></a-marker>
-
-        <a-marker-camera id="animated-marker" type='barcode' value='6'>
+        <a-marker-camera type="pattern" url ="./marker.patt">
             <a-entity gltf-model="#animated-asset"></a-entity>
         </a-marker-camera>
 
