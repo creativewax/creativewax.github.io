@@ -13,9 +13,9 @@
             <a-asset-item id="animated-asset" src="./scene.glb"></a-asset-item>
         </a-assets> 
 
-        <a-entity gltf-model="#animated-asset" scale="1"></a-entity>
-
-        <a-marker-camera type="pattern" url="./marker.patt"></a-marker-camera>
+        <a-marker-camera type="pattern" url="./marker.patt">
+            <a-entity gltf-model="#animated-asset" scale="0.1"></a-entity>
+        </a-marker-camera>
     </a-scene>
 </body>
 </html>
